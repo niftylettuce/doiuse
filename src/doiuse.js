@@ -3,7 +3,7 @@ let missingSupport = require('./missing-support')
 let Detector = require('./detect-feature-use')
 let Multimatch = require('multimatch')
 
-function doiuse (options) {
+function doiuse (options = {}) {
   let {browsers: browserQuery, onFeatureUsage, ignore: ignoreOptions, ignoreFiles} = options
 
   return {
